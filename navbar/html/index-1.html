@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+	    .nav {
+        text-align: center;
+        background-color: #f1f3f5;
+        padding: 10px 0px;
+      }
+      .nav-link {
+        text-decoration: none;
+        display: inline-block;
+        padding:10px;
+        color: #212529;
+        margin-bottom: 5px;
+      }
+      .nav-link:hover {
+        text-decoration:none;
+        background-color: #dee2e6;
+      }
+    </style>
   </head>
   <body>
-	<script src="index.js"></script>
+    <nav class="nav">
+      <a href="/" class="nav-link">Home</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="tools.html" class="nav-link">Recommended Tools</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+    </nav>
   </body>
 </html>
