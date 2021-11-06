@@ -9,16 +9,14 @@
       body {
         margin: 0;
       }
-      
       .header {
-        display: flex;
-        justify-content: space-between;
-        padding:0px 1rem;
+          padding:0px 1rem;
       }
       /* Logo/ Brand Section       */
       .brand {
         text-align: center;
         display: flex;
+        justify-content: space-between;
         align-items: center;
       }
       .brand-logo {
@@ -26,7 +24,19 @@
         color: #212529;
       }
       /* End of Logo/ Brand Section     */
-      /*    Nav links        */
+      .nav {
+        display: none;
+      }
+      /* Hide nav links on screens with width below 768px  */
+      @media (min-width: 768px) {
+        .header {
+          display: flex;
+          justify-content: space-between;
+        }
+        .nav-burger {
+          display: none;
+        }
+        /*    Nav links        */
 	    .nav {
         text-align: center;
         display: flex;
@@ -45,11 +55,6 @@
         opacity: 0.6;
       }
       /*   End of Nav links        */
-      /* Hide nav links on screens with width below 768px  */
-      @media (max-width: 767.98px) {
-        .nav {
-          display: none;
-        }
       }
 
     </style>
@@ -58,7 +63,11 @@
     <header class="header">
       <div class="brand">
         <a href="/" class="brand-logo"><img src="https://autospeck.netlify.app/assets/img/autospeck-belts-logo.png" alt="" width="100px"></a>
+        <div class="nav-burger">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+        </div>
       </div>
+      
       <nav class="nav">
         <a href="products.html" class="nav-link">Beginners Planes</a>
         <a href="tools.html" class="nav-link">Showcase</a>
