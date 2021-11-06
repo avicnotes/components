@@ -9,14 +9,15 @@
       body {
         margin: 0;
       }
+      
       .header {
         display: flex;
         justify-content: space-between;
         padding:0px 1rem;
       }
+      /* Logo/ Brand Section       */
       .brand {
         text-align: center;
-/*         padding: 10px 10px; */
         display: flex;
         align-items: center;
       }
@@ -24,12 +25,10 @@
         text-decoration: none;
         color: #212529;
       }
-      
+      /* End of Logo/ Brand Section     */
       /*    Nav links        */
 	    .nav {
         text-align: center;
-/*         background-color: #f1f3f5; */
-/*         padding: 10px 0px; */
         display: flex;
         align-items: center;
         font-size: 1.1rem;
@@ -43,12 +42,11 @@
       }
       .nav-link:hover {
         text-decoration:none;
-/*      background-color: #fff3bf; */
         opacity: 0.6;
       }
-      
-      /* Hide nav on screens with width below 640px  */
-      @media (max-width: 640px) {
+      /*   End of Nav links        */
+      /* Hide nav links on screens with width below 768px  */
+      @media (max-width: 767.98px) {
         .nav {
           display: none;
         }
@@ -59,8 +57,7 @@
   <body>
     <header class="header">
       <div class="brand">
-        <a href="/" class="brand-logo">
-		<img src="https://autospeck.netlify.app/assets/img/autospeck-belts-logo.png" alt="" width="100px"></a>
+        <a href="/" class="brand-logo"><img src="https://autospeck.netlify.app/assets/img/autospeck-belts-logo.png" alt="" width="100px"></a>
       </div>
       <nav class="nav">
         <a href="products.html" class="nav-link">Beginners Planes</a>
@@ -68,6 +65,7 @@
         <a href="blog.html" class="nav-link">World Records</a>
         <a href="about.html" class="nav-link">Powered Paper Planes</a>
       </nav>
+      
     </header>
 <!--  World records Largest, smallest, longest flight    -->
   </body>
