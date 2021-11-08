@@ -24,10 +24,24 @@
         color: #212529;
       }
       /* End of Logo/ Brand Section     */
-      
-      .nav {
-        display: none;
+      /*    Nav links        */
+	    .nav {
+        text-align: center;
+        background-color: #f1f3f5;
+        padding: 10px 0px;
       }
+      .nav-link {
+        text-decoration: none;
+        display: block;
+        padding:10px;
+        color: #212529;
+        margin-bottom: 5px;
+      }
+      .nav-link:hover {
+        text-decoration:none;
+        background-color: #dee2e6;
+      }
+      
       /* Hide nav links on screens with width below 768px  */
       @media (min-width: 768px) {
         .header {
@@ -40,7 +54,7 @@
         .nav-cancel{
           display: none;
         }
-        /*    Nav links        */
+        /*  Desktop  Nav links        */
 	    .nav {
         text-align: center;
         display: flex;
@@ -78,7 +92,7 @@
         </div>
       </div>
       
-      <nav class="nav">
+      <nav class="nav is-active" id="nav">
         <a href="products.html" class="nav-link">Beginners Planes</a>
         <a href="tools.html" class="nav-link">Showcase</a>
         <a href="blog.html" class="nav-link">World Records</a>
@@ -89,15 +103,19 @@
 <!--  World records Largest, smallest, longest flight    -->
     <script>
       var navCancel = document.getElementById("nav-cancel");
-      var navBurger = document.getElementById("nav-burger")
+      var navBurger = document.getElementById("nav-burger");
+      var nav = document.getElementById("nav");
+      
       
       navBurger.addEventListener("click", function(){
         navBurger.classList.toggle("is-active");
         navCancel.classList.toggle("is-active");
+        nav.classList.toggle("is-active");
       });
       navCancel.addEventListener("click", function(){
         navBurger.classList.toggle("is-active");
         navCancel.classList.toggle("is-active");
+        nav.classList.toggle("is-active");
       });
     </script>
   </body>
