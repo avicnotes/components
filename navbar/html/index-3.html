@@ -27,7 +27,7 @@
       /*    Nav links        */
 	    .nav {
         text-align: center;
-        background-color: #f1f3f5;
+        background-color: #f3d9fa;
         padding: 10px 0px;
       }
       .nav-link {
@@ -39,8 +39,12 @@
       }
       .nav-link:hover {
         text-decoration:none;
-        background-color: #dee2e6;
+        opacity: 0.6;
       }
+      .is-active {
+        display: none;
+      }
+
       
       /* Hide nav links on screens with width below 768px  */
       @media (min-width: 768px) {
@@ -55,29 +59,23 @@
           display: none;
         }
         /*  Desktop  Nav links        */
-	    .nav {
-        text-align: center;
-        display: flex;
-        align-items: center;
-        font-size: 1.1rem;
-      }
-      .nav-link {
-        text-decoration: none;
-        display: inline-block;
-        padding: 20px 15px;
-        color: #212529;
-/*         margin-bottom: 5px; */
-      }
-      .nav-link:hover {
-        text-decoration:none;
-        opacity: 0.6;
-      }
+        .nav {
+          display: block;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          font-size: 1.1rem;
+          background-color: #fff;
+        }
+        .nav-link {
+          text-decoration: none;
+          display: inline-block;
+          padding: 20px 15px;
+          color: #212529;
+        /*  margin-bottom: 5px; */
+        }
       /*   End of Nav links        */
       }
-      .is-active {
-        display: none;
-      }
-
     </style>
   </head>
   <body>
