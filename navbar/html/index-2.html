@@ -4,18 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-	<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Drone Website Project</title>
     <style type="text/css">
+      body {
+        margin: 0;
+      }
       .brand {
         text-align: center;
         padding: 10px 0px;
@@ -26,9 +19,10 @@
       }
       
       /*    Nav links        */
-      .nav {
+	    .nav {
+        font-size: 1.1rem;
         text-align: center;
-        background-color: #f1f3f5;
+/*         background-color: #fcc2d7; */
         padding: 10px 0px;
       }
       .nav-link {
@@ -41,13 +35,14 @@
       .nav-link:hover {
         text-decoration:none;
         background-color: #dee2e6;
+        opacity: .7;
       }
     </style>
   </head>
   <body>
     <header>
       <div class="brand">
-        <a href="/" class="brand-logo">CrazyDrones</a>
+        <a href="/" class="brand-logo"><img src="https://autospeck.netlify.app/assets/img/autospeck-belts-logo.png" alt="" width="100px"></a>
       </div>
       <nav class="nav">
         <a href="products.html" class="nav-link">Starter Drones</a>
@@ -56,7 +51,6 @@
         <a href="blog.html" class="nav-link">Deliverly Drones</a>
       </nav>
     </header>
-  </body>
-</html>
+    
   </body>
 </html>
