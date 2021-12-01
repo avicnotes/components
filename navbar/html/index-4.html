@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Drone Website Project</title>
+    <style type="text/css">
+      .brand {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px;
+      }
+      .brand-logo {
+        text-decoration: none;
+        color: #212529;
+      }
+      
+      /*    Nav links        */
+	    .nav {
+        text-align: center;
+        background-color: #f1f3f5;
+        padding: 10px 0px;
+      }
+      .nav-link {
+        text-decoration: none;
+        display: inline-block;
+        padding:10px;
+        color: #212529;
+        margin-bottom: 5px;
+      }
+      .nav-link:hover {
+        text-decoration:none;
+        background-color: #dee2e6;
+      }
+    </style>
   </head>
   <body>
-	<script src="index.js"></script>
+    <header>
+      <div class="brand">
+        <a href="/" class="brand-logo">CrazyDrones</a>
+        <div class="nav-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.145 18.29c-5.042 0-9.145-4.102-9.145-9.145s4.103-9.145 9.145-9.145 9.145 4.103 9.145 9.145-4.102 9.145-9.145 9.145zm0-15.167c-3.321 0-6.022 2.702-6.022 6.022s2.702 6.022 6.022 6.022 6.023-2.702 6.023-6.022-2.702-6.022-6.023-6.022zm9.263 12.443c-.817 1.176-1.852 2.188-3.046 2.981l5.452 5.453 3.014-3.013-5.42-5.421z"/></svg>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="products.html" class="nav-link">Starter Drones</a>
+        <a href="about.html" class="nav-link">Photography Drones</a>
+        <a href="tools.html" class="nav-link">Military Drones</a>
+        <a href="blog.html" class="nav-link">Deliverly Drones</a>
+      </nav>
+    </header>
+    
   </body>
 </html>
